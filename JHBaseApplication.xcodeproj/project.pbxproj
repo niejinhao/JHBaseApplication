@@ -11,7 +11,6 @@
 		36BF2712DAF5800EB528CDAB /* Pods_JHBaseApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABA65526648539D9A0CFDB /* Pods_JHBaseApplication.framework */; };
 		993A647456CE515F3E072086 /* Pods_JHBaseApplication_JHBaseApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2B59A6B8AEEFCD9913517 /* Pods_JHBaseApplication_JHBaseApplicationUITests.framework */; };
 		CD11B3E828E694AD0043E71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B3E728E694AD0043E71B /* AppDelegate.m */; };
-		CD11B3EB28E694AD0043E71B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B3EA28E694AD0043E71B /* SceneDelegate.m */; };
 		CD11B3EE28E694AD0043E71B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B3ED28E694AD0043E71B /* ViewController.m */; };
 		CD11B3F128E694AD0043E71B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD11B3EF28E694AD0043E71B /* Main.storyboard */; };
 		CD11B3F328E694AF0043E71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD11B3F228E694AF0043E71B /* Assets.xcassets */; };
@@ -50,8 +49,6 @@
 		CD11B3E328E694AD0043E71B /* JHBaseApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHBaseApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD11B3E628E694AD0043E71B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD11B3E728E694AD0043E71B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CD11B3E928E694AD0043E71B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		CD11B3EA28E694AD0043E71B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		CD11B3EC28E694AD0043E71B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CD11B3ED28E694AD0043E71B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CD11B3F028E694AD0043E71B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +103,6 @@
 				A4948CF930CB20C58A78ED03 /* Pods-JHBaseApplicationTests.debug.xcconfig */,
 				BD6D214904A73A5C5487A59C /* Pods-JHBaseApplicationTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,10 +131,10 @@
 		CD11B3E528E694AD0043E71B /* JHBaseApplication */ = {
 			isa = PBXGroup;
 			children = (
+				CDBC389028E6E10300C6CDCE /* Common */,
+				CDBC388B28E6E04600C6CDCE /* Class */,
 				CD11B3E628E694AD0043E71B /* AppDelegate.h */,
 				CD11B3E728E694AD0043E71B /* AppDelegate.m */,
-				CD11B3E928E694AD0043E71B /* SceneDelegate.h */,
-				CD11B3EA28E694AD0043E71B /* SceneDelegate.m */,
 				CD11B3EC28E694AD0043E71B /* ViewController.h */,
 				CD11B3ED28E694AD0043E71B /* ViewController.m */,
 				CD11B3EF28E694AD0043E71B /* Main.storyboard */,
@@ -165,6 +161,84 @@
 				CD11B40E28E694AF0043E71B /* JHBaseApplicationUITestsLaunchTests.m */,
 			);
 			path = JHBaseApplicationUITests;
+			sourceTree = "<group>";
+		};
+		CDBC388B28E6E04600C6CDCE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				CDBC388E28E6E0C000C6CDCE /* ViewController */,
+				CDBC388F28E6E0CB00C6CDCE /* ViewModel */,
+				CDBC388D28E6E0B800C6CDCE /* View */,
+				CDBC388C28E6E04F00C6CDCE /* Model */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CDBC388C28E6E04F00C6CDCE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CDBC388D28E6E0B800C6CDCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDBC388E28E6E0C000C6CDCE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CDBC388F28E6E0CB00C6CDCE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDBC389028E6E10300C6CDCE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CDBC389328E6E13400C6CDCE /* Tool */,
+				CDBC389128E6E10F00C6CDCE /* Base */,
+				CDBC389428E6E15000C6CDCE /* Network */,
+				CDBC389228E6E12400C6CDCE /* Category */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CDBC389128E6E10F00C6CDCE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CDBC389228E6E12400C6CDCE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CDBC389328E6E13400C6CDCE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CDBC389428E6E15000C6CDCE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		F97642438C9D47D22F6F00AC /* Frameworks */ = {
@@ -418,7 +492,6 @@
 				CD11B3EE28E694AD0043E71B /* ViewController.m in Sources */,
 				CD11B3E828E694AD0043E71B /* AppDelegate.m in Sources */,
 				CD11B3F928E694AF0043E71B /* main.m in Sources */,
-				CD11B3EB28E694AD0043E71B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
