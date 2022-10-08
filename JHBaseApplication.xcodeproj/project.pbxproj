@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2A28C0E0CC09FC25DE055121 /* Pods_JHBaseApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7017B27E8BDE8A1B6AFDF519 /* Pods_JHBaseApplicationTests.framework */; };
 		36BF2712DAF5800EB528CDAB /* Pods_JHBaseApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CABA65526648539D9A0CFDB /* Pods_JHBaseApplication.framework */; };
+		3F4643AA28F1096D0030D9B6 /* BaseTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4643A928F1096D0030D9B6 /* BaseTabBarVC.m */; };
+		3F4643AF28F109BA0030D9B6 /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4643AE28F109BA0030D9B6 /* BaseTabBar.m */; };
+		3F4643B428F10A050030D9B6 /* BaseTabBarM.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4643B328F10A050030D9B6 /* BaseTabBarM.m */; };
 		993A647456CE515F3E072086 /* Pods_JHBaseApplication_JHBaseApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2B59A6B8AEEFCD9913517 /* Pods_JHBaseApplication_JHBaseApplicationUITests.framework */; };
 		CD11B3E828E694AD0043E71B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B3E728E694AD0043E71B /* AppDelegate.m */; };
 		CD11B3F328E694AF0043E71B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD11B3F228E694AF0043E71B /* Assets.xcassets */; };
@@ -42,6 +45,12 @@
 /* Begin PBXFileReference section */
 		0CABA65526648539D9A0CFDB /* Pods_JHBaseApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHBaseApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2B59A6B8AEEFCD9913517 /* Pods_JHBaseApplication_JHBaseApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHBaseApplication_JHBaseApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4643A828F1096D0030D9B6 /* BaseTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarVC.h; sourceTree = "<group>"; };
+		3F4643A928F1096D0030D9B6 /* BaseTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarVC.m; sourceTree = "<group>"; };
+		3F4643AD28F109BA0030D9B6 /* BaseTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBar.h; sourceTree = "<group>"; };
+		3F4643AE28F109BA0030D9B6 /* BaseTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBar.m; sourceTree = "<group>"; };
+		3F4643B228F10A050030D9B6 /* BaseTabBarM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarM.h; sourceTree = "<group>"; };
+		3F4643B328F10A050030D9B6 /* BaseTabBarM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarM.m; sourceTree = "<group>"; };
 		7017B27E8BDE8A1B6AFDF519 /* Pods_JHBaseApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHBaseApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9008AE536BACE7234CC9316B /* Pods-JHBaseApplication-JHBaseApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBaseApplication-JHBaseApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-JHBaseApplication-JHBaseApplicationUITests/Pods-JHBaseApplication-JHBaseApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A4948CF930CB20C58A78ED03 /* Pods-JHBaseApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHBaseApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-JHBaseApplicationTests/Pods-JHBaseApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +106,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4643A428F108BD0030D9B6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F4643A828F1096D0030D9B6 /* BaseTabBarVC.h */,
+				3F4643A928F1096D0030D9B6 /* BaseTabBarVC.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3F4643AB28F1099A0030D9B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F4643AC28F1099A0030D9B6 /* TabBar */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F4643AC28F1099A0030D9B6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F4643AD28F109BA0030D9B6 /* BaseTabBar.h */,
+				3F4643AE28F109BA0030D9B6 /* BaseTabBar.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3F4643B028F109E00030D9B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F4643B128F109E00030D9B6 /* TabBar */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F4643B128F109E00030D9B6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3F4643B228F10A050030D9B6 /* BaseTabBarM.h */,
+				3F4643B328F10A050030D9B6 /* BaseTabBarM.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		809F918C5DCFA833E4EDF05D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,29 +216,16 @@
 			children = (
 				CDBC388E28E6E0C000C6CDCE /* ViewController */,
 				CDBC388F28E6E0CB00C6CDCE /* ViewModel */,
-				CDBC388D28E6E0B800C6CDCE /* View */,
-				CDBC388C28E6E04F00C6CDCE /* Model */,
+				3F4643B028F109E00030D9B6 /* Model */,
+				3F4643AB28F1099A0030D9B6 /* View */,
 			);
 			path = Class;
-			sourceTree = "<group>";
-		};
-		CDBC388C28E6E04F00C6CDCE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CDBC388D28E6E0B800C6CDCE /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CDBC388E28E6E0C000C6CDCE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F4643A428F108BD0030D9B6 /* TabBar */,
 				CDBC389628E6EA3500C6CDCE /* HomeViewController.h */,
 				CDBC389728E6EA3500C6CDCE /* HomeViewController.m */,
 				CDBC389928E6EA4900C6CDCE /* MusicViewController.h */,
@@ -504,7 +543,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBC389B28E6EA4900C6CDCE /* MusicViewController.m in Sources */,
+				3F4643AA28F1096D0030D9B6 /* BaseTabBarVC.m in Sources */,
+				3F4643AF28F109BA0030D9B6 /* BaseTabBar.m in Sources */,
 				CD11B3E828E694AD0043E71B /* AppDelegate.m in Sources */,
+				3F4643B428F10A050030D9B6 /* BaseTabBarM.m in Sources */,
 				CD11B3F928E694AF0043E71B /* main.m in Sources */,
 				CDBC389828E6EA3500C6CDCE /* HomeViewController.m in Sources */,
 				CDBC389E28E6EA5700C6CDCE /* SettingViewController.m in Sources */,

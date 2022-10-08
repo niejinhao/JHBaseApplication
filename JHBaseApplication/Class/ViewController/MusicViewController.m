@@ -16,6 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"音乐";
+    self.view.backgroundColor = [UIColor yellowColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
 }
 
 /*

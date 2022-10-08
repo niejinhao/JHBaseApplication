@@ -16,6 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"设置";
+    self.view.backgroundColor = [UIColor cyanColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
 }
 
 /*

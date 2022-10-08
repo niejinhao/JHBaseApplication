@@ -16,6 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"首页";
+    self.view.backgroundColor = [UIColor purpleColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
 }
 
 /*
