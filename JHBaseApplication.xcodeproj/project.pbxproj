@@ -20,6 +20,7 @@
 		CD11B40328E694AF0043E71B /* JHBaseApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B40228E694AF0043E71B /* JHBaseApplicationTests.m */; };
 		CD11B40D28E694AF0043E71B /* JHBaseApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B40C28E694AF0043E71B /* JHBaseApplicationUITests.m */; };
 		CD11B40F28E694AF0043E71B /* JHBaseApplicationUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11B40E28E694AF0043E71B /* JHBaseApplicationUITestsLaunchTests.m */; };
+		CD7355F428F15788007739CD /* JDJR_UIKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7355F228F15788007739CD /* JDJR_UIKitTool.m */; };
 		CDBC389828E6EA3500C6CDCE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC389728E6EA3500C6CDCE /* HomeViewController.m */; };
 		CDBC389B28E6EA4900C6CDCE /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC389A28E6EA4900C6CDCE /* MusicViewController.m */; };
 		CDBC389E28E6EA5700C6CDCE /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC389D28E6EA5700C6CDCE /* SettingViewController.m */; };
@@ -68,6 +69,9 @@
 		CD11B40828E694AF0043E71B /* JHBaseApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHBaseApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD11B40C28E694AF0043E71B /* JHBaseApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHBaseApplicationUITests.m; sourceTree = "<group>"; };
 		CD11B40E28E694AF0043E71B /* JHBaseApplicationUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHBaseApplicationUITestsLaunchTests.m; sourceTree = "<group>"; };
+		CD7355F228F15788007739CD /* JDJR_UIKitTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDJR_UIKitTool.m; sourceTree = "<group>"; };
+		CD7355F328F15788007739CD /* JDJR_UIKitTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDJR_UIKitTool.h; sourceTree = "<group>"; };
+		CDB78B2E28F257B6007A3F95 /* JH_Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JH_Common.h; sourceTree = "<group>"; };
 		CDBC389628E6EA3500C6CDCE /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		CDBC389728E6EA3500C6CDCE /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		CDBC389928E6EA4900C6CDCE /* MusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		CDBC389028E6E10300C6CDCE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CDB78B2E28F257B6007A3F95 /* JH_Common.h */,
 				CDBC389328E6E13400C6CDCE /* Tool */,
 				CDBC389128E6E10F00C6CDCE /* Base */,
 				CDBC389428E6E15000C6CDCE /* Network */,
@@ -271,6 +276,8 @@
 		CDBC389328E6E13400C6CDCE /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				CD7355F328F15788007739CD /* JDJR_UIKitTool.h */,
+				CD7355F228F15788007739CD /* JDJR_UIKitTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -542,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD7355F428F15788007739CD /* JDJR_UIKitTool.m in Sources */,
 				CDBC389B28E6EA4900C6CDCE /* MusicViewController.m in Sources */,
 				3F4643AA28F1096D0030D9B6 /* BaseTabBarVC.m in Sources */,
 				3F4643AF28F109BA0030D9B6 /* BaseTabBar.m in Sources */,
