@@ -15,3 +15,4 @@
 #define JDJR_Height                     [JDJR_UIKitTool jdjr_screenHeight]
 #define JDJR_RTO                        (JDJR_Width / 375.f)
 #define JDJR_R(x)                       (floor((JDJR_RTO * x) * [UIScreen mainScreen].scale) / [UIScreen mainScreen].scale)
+#define JDJR_isIphoneX                  [JDJR_UIKitTool jdjr_deviceVersionIsIphoneX]

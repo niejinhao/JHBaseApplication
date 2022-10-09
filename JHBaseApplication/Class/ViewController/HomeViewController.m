@@ -6,7 +6,6 @@
 //
 
 #import "HomeViewController.h"
-#import "JH_Common.h"
 
 @interface HomeViewController ()
 
@@ -28,8 +27,8 @@
     NSLog(@"JDJR_Width:%f",JDJR_Width);
     NSLog(@"JDJR_Height:%f",JDJR_Height);
     NSLog(@"JDJR_RTO:%f",JDJR_RTO);
-    NSLog(@"JDJR_R:%f",JDJR_R(1));
-    
+    NSLog(@"JDJR_R:%f",JDJR_R(200));
+    NSLog(@"JDJR_isIphoneX:%d",JDJR_isIphoneX);
     
 
 }

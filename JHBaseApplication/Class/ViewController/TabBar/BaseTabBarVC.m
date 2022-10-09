@@ -46,13 +46,13 @@
                                                 IsSpecialItem:NO
                                                    BtnYOffset:0
                          ],
-                        [BaseTabBarM tabbarModelWithTitle:@""
-                                                    ImageName:@"tab-bar-tag"
-                                              SelectImageName:@""
+                        [BaseTabBarM tabbarModelWithTitle:@"音乐"
+                                                    ImageName:@"tab_mine_nol"
+                                              SelectImageName:@"tab_mine_nol"
                                     ViewControllerClassString:[MusicViewController description]
                               NavigationControllerClassString:[UINavigationController description]
-                                                IsSpecialItem:YES
-                                                   BtnYOffset:-10
+                                                IsSpecialItem:NO
+                                                   BtnYOffset:0
                          ],
                         [BaseTabBarM tabbarModelWithTitle:@"设置"
                                                     ImageName:@"tab_mine_nol"
