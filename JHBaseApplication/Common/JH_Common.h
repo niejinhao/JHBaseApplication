@@ -16,3 +16,11 @@
 #define JDJR_RTO                        (JDJR_Width / 375.f)
 #define JDJR_R(x)                       (floor((JDJR_RTO * x) * [UIScreen mainScreen].scale) / [UIScreen mainScreen].scale)
 #define JDJR_isIphoneX                  [JDJR_UIKitTool jdjr_deviceVersionIsIphoneX]
+
+
+#define JDJR_SAFE_Dispatch_main_async(block)\
+if ([NSThread isMainThread]) {\
+    block();\
+} else {\
+    dispatch_async(dispatch_get_main_queue(), block);\
+}

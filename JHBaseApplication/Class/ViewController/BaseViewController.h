@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "JH_Common.h"
+#import "JDJR_Request.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

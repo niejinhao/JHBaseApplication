@@ -30,7 +30,18 @@
     NSLog(@"JDJR_R:%f",JDJR_R(200));
     NSLog(@"JDJR_isIphoneX:%d",JDJR_isIphoneX);
     
-
+    
+    JDJR_Request *requset = [[JDJR_Request alloc] init];
+    
+    [requset jTalkGetCustomerWithBlock:^(NSDictionary *result) {
+        JDJR_SAFE_Dispatch_main_async(^{
+            NSLog(@"result:%@",result);
+        });
+    } failure:^{
+        JDJR_SAFE_Dispatch_main_async(^{
+            NSLog(@"failure");
+        })
+    }];
 }
 
 @end
